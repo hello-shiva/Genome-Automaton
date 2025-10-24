@@ -1,0 +1,229 @@
+/* 
+Biotech Theme Stylesheet
+Dark background with neon accents (cyan/green)
+*/
+
+* {
+    color: #E0E0E0;
+}
+
+QMainWindow {
+    background-color: #1A1F2E;
+}
+
+QFrame {
+    background-color: #1A1F2E;
+    border: none;
+}
+
+/* Top Bar */
+#topBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2A3F5F, stop:1 #1A2F4F);
+    border-bottom: 2px solid #00D9FF;
+}
+
+#appTitle {
+    color: #00FFAA;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2D3E5F;
+    color: #FFFFFF;
+    border: 2px solid #4A6FA5;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #3D5080;
+    border-color: #00D9FF;
+}
+
+QPushButton:pressed {
+    background-color: #1D2E4F;
+}
+
+QPushButton:disabled {
+    background-color: #1A1F2E;
+    color: #666666;
+    border-color: #333333;
+}
+
+#btnRun {
+    background-color: #00AA66;
+    border-color: #00FF88;
+}
+
+#btnRun:hover {
+    background-color: #00CC77;
+}
+
+#btnPause {
+    background-color: #CC6600;
+    border-color: #FF8800;
+}
+
+#btnPause:hover {
+    background-color: #DD7711;
+}
+
+#btnReset {
+    background-color: #CC0033;
+    border-color: #FF3366;
+}
+
+#btnReset:hover {
+    background-color: #DD1144;
+}
+
+#btnBuild {
+    background-color: #0088CC;
+    border-color: #00AAFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#btnBuild:hover {
+    background-color: #0099DD;
+}
+
+#btnGenerate {
+    background-color: #7733AA;
+    border-color: #9944CC;
+    font-size: 12px;
+}
+
+#btnGenerate:hover {
+    background-color: #8844BB;
+}
+
+#speedBtn {
+    padding: 8px 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Panels */
+#leftPanel, #rightPanel {
+    background-color: #1F2937;
+    border: 1px solid #374151;
+    border-radius: 8px;
+}
+
+#centerPanel {
+    background-color: #161B26;
+    border: 1px solid #2A3F5F;
+    border-radius: 8px;
+}
+
+/* Input Fields */
+QLineEdit, QTextEdit {
+    background-color: #0F1419;
+    color: #FFFFFF;
+    border: 2px solid #2A4A6A;
+    border-radius: 5px;
+    padding: 8px;
+    selection-background-color: #00AA66;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border-color: #00D9FF;
+}
+
+#dnaInput, #patternInput {
+    font-family: 'Consolas', monospace;
+}
+
+#transitionLog, #resultsDisplay {
+    background-color: #0A0E14;
+    border: 1px solid #1A2A3A;
+    padding: 10px;
+}
+
+/* Labels */
+QLabel {
+    color: #C0D0E0;
+}
+
+#currentStateLabel {
+    background-color: #0F1920;
+    border: 2px solid #00D9FF;
+    border-radius: 6px;
+    padding: 12px;
+    color: #00FFCC;
+    font-size: 13px;
+}
+
+#examplesLabel {
+    color: #8899AA;
+    background-color: #141923;
+    padding: 8px;
+    border-left: 3px solid #4488AA;
+    border-radius: 3px;
+}
+
+/* Footer */
+#footer {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #1A2F4F, stop:1 #0A1F3F);
+    border-top: 2px solid #00D9FF;
+}
+
+/* Visualization Widgets */
+#automataViz, #dnaViz {
+    background-color: #0D1117;
+    border: 2px solid #1F2937;
+    border-radius: 6px;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background-color: #1A1F2E;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #3A4F6F;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #4A6FA5;
+}
+
+QScrollBar:horizontal {
+    background-color: #1A1F2E;
+    height: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #3A4F6F;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #4A6FA5;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #2A3F5F;
+    width: 2px;
+}
+
+QSplitter::handle:hover {
+    background-color: #00D9FF;
+}
