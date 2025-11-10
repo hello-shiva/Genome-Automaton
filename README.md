@@ -231,5 +231,6 @@ Free for educational and academic use.
 
 ## 👨‍💻 Author
 
-**AamishB**  
+**AamishB**
+**Shivam Kumar**  
 Repository: [Genome-Automaton](https://github.com/AamishB/Genome-Automaton)
